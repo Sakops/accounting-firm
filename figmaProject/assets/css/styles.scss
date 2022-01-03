@@ -1,0 +1,305 @@
+$color: #fff;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    position: sticky;
+    display: flex;
+    min-width: 100%;
+    top: 0;
+    z-index: 2;
+    background-size:cover;
+    background-color: $color;
+}
+.header{
+    display: block;
+    margin-top: 2rem;
+    margin-left: 8rem;
+    .vector{
+        margin: -11px;
+    }
+    .buhOne{
+        margin: 40px;
+    }
+}
+.info-block{
+    // display: inline;
+    margin-left: 14rem;
+    margin-top: 10px;
+    font-size: 15px;
+    align-items: center;
+    .information-block{
+        margin-left: 0.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        img {
+            margin: 10px;
+        }
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        margin-left: 15px;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: #005FA3;
+        }
+    }
+}
+.picture-block{
+    color: $color;
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    .headline{
+        margin-left: 7rem;
+        margin-top: 13rem;
+        overflow-wrap: break-word;
+        width: 33.33%;
+        .btn{
+            padding: 1rem;
+            border-radius: 0% !important;
+            width: 250px;
+        }
+    }
+}
+.services-block{
+    padding: 10px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    background-color: rgb(182, 175, 175);
+    padding-bottom: 10rem;
+
+    .main{
+        margin-top: 6rem;
+        margin-left: 5rem;
+        p{
+            margin-left: 22px;
+            font-size: 23px;
+            color: rgb(59, 59, 59);
+        }
+        h1{
+            margin-left: 20px;
+        }
+    }
+    .squares{
+        color: $color;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .square{
+            width: 30%;
+            height: 50vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 10px;
+            padding: 10px;
+            position: relative;
+            transition: transform 0.3s ease-in-out;
+            h4{
+                text-align: center;
+                margin-top: 20rem;
+            }
+        }
+        .square:after{
+            content: '';
+            background: #005FA3;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            transition: all 0.3s;
+        }
+        .square.image_cover:hover::after{
+            opacity: 0.7;
+        }
+        .square h4{
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+}
+/*About the company*/
+.about-block{
+    display: flex;
+    flex-direction: row;
+    left: 0px;
+    top: 780px;
+    margin-top: 6rem;
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    border-radius: 0px;
+    padding-bottom: 8rem;
+
+    
+    .about-main{
+        display: inline;
+        padding: 1rem;
+        h1{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+    .blocks{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+        margin-top: 1.1rem;
+        .block{
+            width: 20vw;
+            height: 40vh;
+            padding: 3.5rem;
+            background-color: #EBEBEB;
+            h2{
+                font-weight: bold;
+                font-size: 50px;
+               
+            }
+        }
+        .block:hover{
+            background-color: #005FA3;
+            color: white;
+            a{
+                color: white;
+            }
+        }
+    }
+}
+/*companies*/
+.companies-block{
+    position: relative;
+    background-color: #EBEBEB;
+    width: 100%;
+    min-width: 100%;
+    height: 55vh;
+    margin-bottom: 2.5rem;
+    .companies-main{
+        margin-top: 2rem;
+        padding: 3rem;
+    }
+    .microsoft{
+        display: flex;
+        flex-direction: row;
+        margin-left: 3em;
+    }
+}
+/*Reviews*/
+.reviews-block{
+    margin-top: 6rem;
+    margin-left: 5rem;
+    margin-bottom: 4rem;
+    margin-right: 2rem;
+    padding-bottom: 8rem;
+    .review-main{
+        margin-bottom: 4rem;
+    }
+    .review{
+        background-color: #EBEBEB;
+        .katja{
+            padding: 6rem;
+            height: 50vh;
+            .name{
+                display: flex;
+                .job{
+                    display: inline;
+                    margin-left: 2.5rem;
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+    }
+    .buttons-block{
+        margin-top: 0.5rem;
+        float: right;
+        button{
+            border-radius: 0 !important;
+            margin-left: -4.5px;
+            opacity: 0.5;
+            transition: transform 250ms ease-in-out;
+            
+        }
+        button:hover{
+            background-color: #005FA3;
+            opacity: 1;   
+            transform: scale(1.1);
+
+        }
+    }
+}
+/*footer*/
+.footer{
+    width: 100%;
+    height: 90vh;
+    margin-bottom: 2rem;
+
+    
+
+}
+.footer-block{
+    padding-top: 14rem;
+    padding-left: 4rem;
+
+    content: '';
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+
+    .contact-block{
+        z-index: 2;
+    } 
+    .info{
+        display: flex;
+        img{
+            height: 33%;
+        }
+        .mailX{
+            top: 0;
+            left: 0;
+            margin-left:-35px;
+            margin-top: 4px;
+        }
+
+    }
+    .forum{
+        margin-right: 14rem;
+        margin-top: -13rem;
+        float: right;
+
+        form{
+            input{
+                width: 250px;
+                border: none;
+                background-color: transparent;
+                color: white;
+                border-bottom: 1px solid white;
+            }
+            textarea{
+                width: 400px;
+                border: none;
+                background-color: transparent;
+                color: white;
+                border-bottom: 1px solid white;
+            }
+            button{
+                float: right;
+            }
+        }
+    }
+}
+
+
